@@ -118,12 +118,13 @@ app.delete("/chats/:id", async (req, res) => {
     res.redirect("/chats");
   } catch (err) {
     console.error(err);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("somthing wrong ");
   }
 });
 
 app.get("/", (req, res) => {
-  res.send("hello");
+  // res.send("hello");
+  res.redirect("/chats");
 });
 
 const PORT = process.env.PORT;
