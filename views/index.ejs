@@ -42,14 +42,14 @@
       <button  class="btn btn-outline-primary">create</button>
     </form>
     <% for(let chat of Allchat){ %>
-    <div class="chats card w-50 my-3">
-      <div class="card-body flex flex-col gap-2">
+    <div class="chats card  my-3 ">
+      <div class="card-body flex flex-col gap-2 ">
         <h3 class="card-title">from: <b><%=chat.from%> </b></h3>
-        <div class="msg flex gap-3 text-center bg-green-200  items-center p-2 rounded-lg">
-          <p class="card-text text-xl font-bold"><%=chat.message%></p>
-          <div class="time">
+        <div class="msg flex gap-3 text-center bg-green-200  items-center p-3 rounded-lg ">
+          <p class="card-text text-xl font-bold "><%=chat.message%></p>
+          <div class="time ">
             
-            <p class="text ">
+            <p class="text">
               <%=chat.created_at.toString().split(" ")[4] %>
               <p class="text"><%=chat.created_at.toString().split(" ").splice(0,4).join(" ")%></p>
             </p>

@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "20.12.1"
+  },
   "name": "chats",
   "version": "1.0.0",
   "description": "initialize npm === npm init -y\r initialize express === npm i express\r initialize ejs === npm i ejs\r make file index.js === touch index.js\r initialize mongoose === npm i mongoose",
