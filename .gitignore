@@ -1,3 +1,5 @@
 .env
 node_modules/
 init.js
+# Local Netlify folder
+.netlify

@@ -84,7 +84,7 @@ app.get("/chats/:id/edit", async (req, res) => {
     const { id } = req.params; // Extract id from req.params
     console.log("id:", id);
     const chat = await Chat.findById(id); // Use id instead of _id
-    console.log("edit_chat:", chat);
+    // console.log("edit_chat:", chat);
     res.render("edit.ejs", { chat });
   } catch (err) {
     console.error(err);
