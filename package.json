@@ -1,18 +1,17 @@
 {
   "name": "chats",
   "version": "1.0.0",
-  "description": "Initialize npm === npm init -y\r initialize express === npm i express\r initialize ejs === npm i ejs\r make file index.js === touch index.js\r initialize mongoose === npm i mongoose",
+  "description": "initialize npm === npm init -y\r initialize express === npm i express\r initialize ejs === npm i ejs\r make file index.js === touch index.js\r initialize mongoose === npm i mongoose",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.19.2",
-    "ejs": "^3.1.10",
-    "mongoose": "^8.3.3"
-  },
   "devDependencies": {
+    "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node index.js"
-  }
+    "build": "npx webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
